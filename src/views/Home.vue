@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h1>Adopt a Bestfirend!</h1>
       {{ getAllCats.length }}
       {{ animalsCount }}
@@ -57,7 +57,8 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'animalsCount'
+      'animalsCount',
+      'getAllCats'
     ])
   },
   methods: {
